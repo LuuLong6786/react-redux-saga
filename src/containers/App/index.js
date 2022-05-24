@@ -1,10 +1,19 @@
-import React, { Component } from "react";
-import Button from "@mui/icons-material";
-import { ThemeProvider } from "@emotion/react";
-import styles from "../App/styles";
-import { withStyles } from "@mui/material";
+import React from "react";
+import Button from "@mui/material/Button";
+import { ThemeProvider } from "@mui/material";
+import styles from "./styles";
+import Slider from "@mui/material/Slider";
 
 function App() {
-  return <div>Hello</div>;
+  return (
+    <ThemeProvider theme={styles}>
+      <div>
+        <h1>HELLO SAGA</h1>
+        <Button variant="contained" color="primary">
+          Material UI
+        </Button>
+      </div>
+    </ThemeProvider>
+  );
 }
-export default withStyles(styles)(App);
+export default App;
